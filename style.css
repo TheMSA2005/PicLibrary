@@ -343,18 +343,12 @@ table{
 }
 /*Positioning & Styling of Download Button in Explore Section*/
 .download{
-    display:flex;
-    align-items: center;
-    padding:10px;
     background:transparent;
     border:1px solid var(--text-color);
     border-radius: 25px;
     color:var(--text-color);
     font-weight:bold;
     cursor:pointer;
-}
-.all-image a{
-    text-decoration: none;
 }
 .download:hover{
     background-color: var(--hyper-color);
