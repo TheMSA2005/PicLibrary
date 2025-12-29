@@ -1,0 +1,363 @@
+/*Light Mode Colors*/
+:root{
+    --header-color:black;
+    --header-text:white;
+    --base-color:white;
+    --base-variant: #e8e9ed;
+    --text-color: #111528;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --hyper-color:rgb(0, 247, 255);
+    --footer-color:black;
+    --footer-text:white;
+}
+/*Dark Mode Color*/
+.darkmode{
+     --header-color:black;
+    --header-text:white;
+    --base-color:#070b1d;
+    --base-variant: #101425;
+    --text-color: #ffffff;
+    --secondary-text: #a4a5b8;
+    --hyper-color:blue;
+    --primary-color: #3a435d; 
+    --footer-color:black;
+    --footer-text:white;
+}
+/*Body of all pages styling*/
+body {
+    background-color: var(--base-color); 
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
+    font-family: Arial,Helvetica, sans-serif;
+}
+/*Effect on head of all pages*/
+.head{
+    display:flex;
+   justify-content:space-between;
+   padding:10px;
+   background-color: var(--header-color);
+   color:var(--header-text)
+}
+/*Navigation Links for Home,Explore,Contact*/
+.nav-link{
+    display:flex;
+     justify-content:space-between;
+     gap:20px;
+     padding: 10px;
+     font-family:"Poppins";
+    font-weight: bold;
+    font-size:1.2rem;
+}
+.h a:link{
+    text-decoration:none;
+    color:var(--header-text);
+    font-family:"Poppins";
+    font-weight: bold;
+    font-size:2.0rem;
+}
+.h a:visited{
+    text-decoration:none;
+    color:var(--header-text);
+    font-family:"Poppins";
+    font-weight: bold;
+    font-size:2.0rem;
+}
+/*Theme Switch Button*/
+#theme-switch{
+    height:50px;
+    width:50px;
+    padding:0;
+    border-radius:50%;
+    border:none;
+    display: flex; 
+    overflow:0;           
+    justify-content: center;   
+    align-items: center;
+    background-color:var(--primary-color);
+    color:var(--base-color);
+}
+#theme-switch svg:last-child{
+    display:none;
+}
+.darkmode #theme-switch svg:first-child{
+    display:none;
+}
+.darkmode #theme-switch svg:last-child{
+    display:block;
+}
+
+.home-button a:link{
+    text-decoration:none;
+    color:var(--header-text);
+}
+/*Individual Styling of Home,Explore & Contact*/
+.home-button a:visited{
+    text-decoration:none;
+    color:var(--header-text);
+}
+.home-button a:hover{
+    font-size:1.05em;
+    color: var(--primary-color);
+    filter: brightness(1.2);
+    text-decoration:underline solid;
+    text-decoration-color: var(--text-color);
+}
+/*Welcome*/
+#welcome{
+    text-align: center;
+}
+/*Purpose & Cards*/
+#purpose{
+    font-size:1.5em;
+    padding:15px;
+    text-align: center;
+}
+#purpose-text{
+    font-size:1.5rem;
+}
+.feature-card {
+    display: flex;        
+    flex-wrap: nowrap;    
+    align-items: center;  
+    gap: 40px;
+    width:100%
+}
+img{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}    
+.pic{
+    height:250px;
+    width:250px;
+    flex-direction: row;
+    margin-right:10px;
+    border-right:solid 3px var(--text-color);
+    object-fit: cover;
+    flex: 0 0 40%;
+}
+.cards-text {
+    margin-bottom: 50px;
+    max-width: 600px;
+    font-size: 25px; 
+}
+/*Lets start our journey's button*/
+#button button{
+    background-color: var(--primary-color); 
+    color: var(--header-text);             
+    border: 2px solid var(--header-color); 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto;
+    height:66px;
+    width:200px;
+    border-radius: 10px;
+    text-decoration:none;
+    font-family:"Poppins";
+    font-weight: bold;
+    font-size:1.1rem;
+}
+#button a:link{
+    text-decoration:none;
+}
+#button a:link{
+    text-decoration:none;
+}
+#button button:hover{
+    height:70px;
+    width:205px;
+    font-size:1.1em;
+    cursor:pointer;
+}
+/*Text above the button*/
+#command{
+    font-size:1.5rem;
+}
+/*Footer of all pages*/
+footer{
+    background-color:var(--footer-color);
+    color:var(--footer-text);
+}
+footer a:link{
+    text-decoration:none;
+    color:var(--footer-text);
+}
+footer a:visited{
+    text-decoration:none;
+    color:var(--footer-text);
+}
+footer a:hover{
+    text-decoration:underline;
+    color: var(--primary-color);
+}
+.footer-hyperlinks{
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row; /*Normally flex direction is at row*/
+    width:70%;
+}
+.home-footer,.explore-footer,.contact-footer{
+    display:flex;
+    margin-top:30px;
+    gap:20px;
+    flex-direction:column;
+    cursor:pointer;
+    font-family:"Poppins";
+    font-weight: bold;
+    font-size:1.2rem;
+}
+.social-media{
+    display:flex;
+    flex-direction:row;
+    cursor:pointer;
+}
+/*Explore Buttons & Text Styling*/
+.overall-explore{
+    display:flex;
+    flex-direction: row;
+    gap:15px;
+}
+.explore-buttons a{
+    background:transparent;
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+    width:auto;
+    min-width: 180px; 
+    max-width: 250px;
+    border-right: 2.5px solid var(--text-color);
+    padding-right:10px;
+    padding-bottom: 5px;
+}
+.explore-buttons a:link{
+    background: transparent;
+    text-decoration:none;
+}
+.explore-buttons button{
+    background: transparent;
+    color: var(--text-color);             
+    border:3px solid var(--header-color); 
+    border-radius:5px;
+    gap:30px;
+}
+/* Images Styling & Positioning*/
+.all-image div{
+    padding:10px;
+}
+.all-image img{
+    height:225px;
+    width:225px;
+    object-fit: cover;
+}
+.image-row{
+    display:flex;
+    flex-direction:row !important;
+}
+/*Contact Page Styling Starts here*/
+.Contact{
+    text-align:justify;
+}
+/*About-Me Text*/
+.About-Me{
+    display:flex;
+    flex-direction: column;
+}
+#logo{
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height:275px;
+    width:275px;
+} /*Only Text of About Me*/
+#About-Text{
+    font-size:2.0rem;
+}
+/*Skills Lists Styling*/
+#skills-head{
+    clear: both; 
+}
+#skills-head{
+    font-size:2.3rem !important;
+}
+.all-skills li{
+    font-size:2.0rem;
+}
+/*Contact Styling Starts Here*/
+/*Table Styling*/
+table{
+    width:100%;
+    table-layout:fixed;
+    padding:5px;
+    border-collapse: collapse;
+}
+#table-row-1{ 
+    text-align: center; 
+}
+#table-row-1 td{
+    border:1px solid var(--text-color);
+    border-radius: 5px;
+    padding:15px;
+    font-size:1.5em;
+    font-weight: bold;
+}
+/*Hyperlinks of Email,Location*/
+.tabledata a:link{
+    text-decoration:none;
+    color:var(--text-color);
+}
+.tabledata a:visited{
+    text-decoration:none;
+    color:var(--text-color);
+}
+.tabledata a:hover{
+    color:var(--hyper-color);
+}
+/*Form Styling Starts Here*/
+.Feedback{
+    display:flex;
+    flex-direction:column;
+    margin:5px;
+}
+.Name{
+    display:flex;
+    flex-direction:flex-start;
+}
+/*Submit Button*/
+.Feedback button{
+    width:fit-content;
+    margin-top: 10px;
+    padding:10px 20px;
+    align-self: center;
+    border-radius: 5px;
+    font-family:"Poppins";
+    font-size:1.1rem;
+    font-weight:bold;
+    border:2px solid var(--secondary-text);
+    background-color:var(--primary-color);
+    color:var(--header-text);
+}
+.Feedback button:hover { 
+    cursor: pointer;
+    font-size:1.2em; 
+}
+/*Positioning & Styling of Download Button in Explore Section*/
+.download{
+    display:flex;
+    align-items: center;
+    padding:10px;
+    background:transparent;
+    border:1px solid var(--text-color);
+    border-radius: 25px;
+    color:var(--text-color);
+    font-weight:bold;
+    cursor:pointer;
+}
+.all-image a{
+    text-decoration: none;
+}
+.download:hover{
+    background-color: var(--hyper-color);
+    font-size:1.01rem;
+    transition: 0.2s;
+}
