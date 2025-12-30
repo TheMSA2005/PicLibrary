@@ -9,7 +9,7 @@
         <!--Linking-->
         <link href="style.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/16f26d3839.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="script_explore.js" defer></script>
+        <script type="text/javascript" src="script.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -73,21 +73,19 @@
                 <div class="Feedback">
                 <h4>Or You Can Give Your Valuable Feedback:</h4> <!--Contact Section P2-->
                 <label class="Name" for="fname"> First Name:</label>
-                <input class="Name" id="fname" name="FirstName" type="text" placeholder="First Name" maxlength="15" required>
+                <input class="Name TextBox" id="fname" name="FirstName" type="text" placeholder="First Name" maxlength="15" required>
                 <label class="Name" for="lname">Last Name:</label>
                 <input class="Name" id="lname" name="LastName" type="text" placeholder="Last Name"  maxlength="15" required>
                 <br>
                 <label class="Email" for="email">Email:</label>
-                <input class="Email" id="email" name="Email" type="email" placeholder="someone@compnay.domain-name" required>
+                <input class="Email TextBox" id="email" name="Email" type="email" placeholder="someone@compnay.domain-name" required>
                 <br>
                 <label id="Comment" for="comment">Comment</label>
-                <textarea id="TextAreaComment" name="Comment" id="comment" rows="7" column="15" required></textarea>
+                <textarea id="TextAreaComment" class="TextBox" name="Comment" id="comment" rows="7" column="15" required></textarea>
                 <br>
                 <button id="submit">Submit</button>
                 </form>
                 </div>
-                <br>
-                <p id="confirm"></p>
             </div>
             <hr>
         </main>

@@ -123,21 +123,17 @@ body {
     gap: 40px;
     width:100%
 }
-img{
-    margin-top: 50px;
-    margin-bottom: 20px;
-}    
-.pic{
+.card-pic{
     height:250px;
     width:250px;
-    flex-direction: row;
-    margin-right:10px;
     border-right:solid 3px var(--text-color);
     object-fit: cover;
     flex: 0 0 40%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-right:10px;
 }
 .cards-text {
-    margin-bottom: 50px;
     max-width: 600px;
     font-size: 25px; 
 }
@@ -243,7 +239,7 @@ footer a:hover{
 }
 /* Images Styling & Positioning*/
 .all-image div{
-    padding:10px;
+    padding:10px;;
 }
 .all-image img{
     height:225px;
@@ -254,21 +250,39 @@ footer a:hover{
     display:flex;
     flex-direction:row !important;
 }
+.all-image{
+    display: flex; 
+    flex-direction: column;
+    text-decoration:none;
+}
+.all-image button{
+    width:40%;
+}
+/*Positioning & Styling of Download Button in Explore Section*/
+.download{
+    background:transparent;
+    border:1px solid var(--text-color);
+    border-radius: 25px;
+    color:var(--text-color);
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:10px;
+}
+.download:hover{
+    background-color: var(--hyper-color);
+    font-size:1.01rem;
+    transition: 0.2s;
+}
 /*Contact Page Styling Starts here*/
 .Contact{
     text-align:justify;
 }
 /*About-Me Text*/
-.About-Me{
-    display:flex;
-    flex-direction: column;
-}
 #logo{
     float: right;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    height:275px;
-    width:275px;
+    margin-left: 50px;
+    height:200px;
+    width:200px;
 } /*Only Text of About Me*/
 #About-Text{
     font-size:2.0rem;
@@ -340,18 +354,4 @@ table{
 .Feedback button:hover { 
     cursor: pointer;
     font-size:1.2em; 
-}
-/*Positioning & Styling of Download Button in Explore Section*/
-.download{
-    background:transparent;
-    border:1px solid var(--text-color);
-    border-radius: 25px;
-    color:var(--text-color);
-    font-weight:bold;
-    cursor:pointer;
-}
-.download:hover{
-    background-color: var(--hyper-color);
-    font-size:1.01rem;
-    transition: 0.2s;
 }
