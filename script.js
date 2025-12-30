@@ -22,7 +22,7 @@ themeSwitch.addEventListener("click",() => {
 
 // Form Submission
         const scriptURL = 'https://script.google.com/macros/s/AKfycby-HrMv6KuX6vPHLTh4pS4uApiDQBfR9rGuF3pzqVx-S9c_XIhm3rnWLZERIvkL9TKO/exec'
-        const form = document.forms['submit-to-google-sheet']
+        const form = document.forms['Feedbackform']
       
         form.addEventListener('submit', e => {
           e.preventDefault()
