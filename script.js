@@ -22,7 +22,7 @@ themeSwitch.addEventListener("click",() => {
 
 // Form Submission
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzuN00McAA0i3Q4GCVB9L5EPsVwYjUATcxzAuP6C65YlSJr2qPwIFQi_LqPPq_Ls6CT/exec'
-        const form = document.forms['Feedbackform']
+        const form = document.forms['Sheet1']
       
         form.addEventListener('submit', e => {
           e.preventDefault()
