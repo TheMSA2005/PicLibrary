@@ -25,10 +25,10 @@
     --footer-text:white;
 }
 /*Body of all pages styling*/
-body {
+body{
     background-color: var(--base-color); 
     color: var(--text-color);
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
     font-family: Arial,Helvetica, sans-serif;
 }
 /*Effect on head of all pages*/
@@ -42,7 +42,6 @@ body {
 /*Navigation Links for Home,Explore,Contact*/
 .nav-link{
     display:flex;
-     justify-content:space-between;
      gap:20px;
      padding: 10px;
      font-family:"Poppins";
@@ -67,11 +66,9 @@ body {
 #theme-switch{
     height:50px;
     width:50px;
-    padding:0;
     border-radius:50%;
     border:none;
-    display: flex; 
-    overflow:0;           
+    display:flex;       
     justify-content: center;   
     align-items: center;
     background-color:var(--primary-color);
@@ -86,12 +83,11 @@ body {
 .darkmode #theme-switch svg:last-child{
     display:block;
 }
-
+/*Individual Styling of Home,Explore & Contact*/
 .home-button a:link{
     text-decoration:none;
     color:var(--header-text);
 }
-/*Individual Styling of Home,Explore & Contact*/
 .home-button a:visited{
     text-decoration:none;
     color:var(--header-text);
@@ -99,7 +95,6 @@ body {
 .home-button a:hover{
     font-size:1.05em;
     color: var(--primary-color);
-    filter: brightness(1.2);
     text-decoration:underline solid;
     text-decoration-color: var(--text-color);
 }
@@ -117,8 +112,7 @@ body {
     font-size:1.5rem;
 }
 .feature-card {
-    display: flex;        
-    flex-wrap: nowrap;    
+    display: flex;   
     align-items: center;  
     gap: 40px;
     width:100%
@@ -128,7 +122,7 @@ body {
     width:250px;
     border-right:solid 3px var(--text-color);
     object-fit: cover;
-    flex: 0 0 40%;
+    flex:0 0 40%;
     margin-top: 50px;
     margin-bottom: 20px;
     padding-right:10px;
@@ -138,17 +132,22 @@ body {
     font-size: 25px; 
 }
 /*Lets start our journey's button*/
-#button button{
-    background-color: var(--primary-color); 
-    color: var(--header-text);             
+#button{
+    background-color: var(--primary-color);             
     border: 2px solid var(--header-color); 
     display:flex;
-    justify-content:center;
-    align-items:center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin:0 auto;
     height:66px;
     width:200px;
     border-radius: 10px;
+}
+#button button{
+    background-color: var(--primary-color); 
+    color: var(--header-text);
+    border:0;
     text-decoration:none;
     font-family:"Poppins";
     font-weight: bold;
@@ -161,6 +160,7 @@ body {
     text-decoration:none;
 }
 #button button:hover{
+    border-radius: 10px;
     height:70px;
     width:205px;
     font-size:1.1em;
@@ -205,19 +205,17 @@ footer a:hover{
 }
 .social-media{
     display:flex;
-    flex-direction:row;
     cursor:pointer;
 }
 /*Explore Buttons & Text Styling*/
 .overall-explore{
     display:flex;
-    flex-direction: row;
     gap:15px;
 }
 .explore-buttons a{
     background:transparent;
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
     gap:5px;
     width:auto;
     min-width: 180px; 
@@ -289,9 +287,6 @@ footer a:hover{
 }
 /*Skills Lists Styling*/
 #skills-head{
-    clear: both; 
-}
-#skills-head{
     font-size:2.3rem !important;
 }
 .all-skills li{
@@ -309,8 +304,7 @@ table{
     text-align: center; 
 }
 #table-row-1 td{
-    border:1px solid var(--text-color);
-    border-radius: 5px;
+    border:5px solid var(--text-color);
     padding:15px;
     font-size:1.5em;
     font-weight: bold;
@@ -333,16 +327,12 @@ table{
     flex-direction:column;
     margin:5px;
 }
-.Name{
-    display:flex;
-    flex-direction:flex-start;
-}
 /*Submit Button*/
 .Feedback button{
-    width:fit-content;
+    margin-left:auto;
+    margin-right:auto;
     margin-top: 10px;
     padding:10px 20px;
-    align-self: center;
     border-radius: 5px;
     font-family:"Poppins";
     font-size:1.1rem;
